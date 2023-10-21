@@ -10,6 +10,8 @@ export const ContainerIntroduction = styled.div`
   justify-content: center;
   gap: 6rem;
   padding-top: 5.875rem;
+  padding-left: 10rem;
+  padding-right: 10rem;
 `
 
 export const ContainerIntroductionText = styled.div`

@@ -1,5 +1,4 @@
 import { styled } from 'styled-components'
-import { MapPin, ShoppingCart } from 'phosphor-react'
 
 export const HeaderContainer = styled.header`
   display: flex;
@@ -44,4 +43,17 @@ export const ShoppingCartContainer = styled.button`
   border: none;
   padding: 8px;
   cursor: pointer;
+  position: relative;
+`
+
+export const ItemCounterInCart = styled.span`
+  position: absolute;
+  top: -6px;
+  right: -6px;
+  color: ${(props) => props.theme.white};
+  background-color: ${(props) => props.theme['yellow-300']};
+  font-size: 14px;
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
 `

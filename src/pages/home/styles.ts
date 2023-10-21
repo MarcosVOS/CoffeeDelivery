@@ -72,3 +72,112 @@ export const ItemHighlights = styled.div<IconProps>`
     flex-direction: column;
   }
 `
+
+export const Catalog = styled.div`
+  display: flex;
+  flex-direction: column;
+
+  margin-top: 2rem;
+  margin-left: 10rem;
+  margin-right: 10rem;
+  margin-bottom: 9.813rem;
+
+  h1 {
+    margin-bottom: 3.375rem;
+  }
+`
+
+export const TypesOfCoffeeAvailable = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 16rem;
+  height: 19.375rem;
+  background-color: ${(props) => props.theme['white-300']};
+
+  border-radius: 6px 36px;
+
+  img {
+    width: 120px;
+    height: 120px;
+    margin-top: -20px;
+    margin-bottom: 10px;
+  }
+
+  p {
+    color: ${(props) => props.theme['yellow-300']};
+    background-color: ${(props) => props.theme['yellow-100']};
+    padding: 4px 8px;
+    border-radius: 100px;
+    font-size: 10px;
+    font-weight: 700;
+    line-height: 130%;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+  }
+
+  h2 {
+    font-family: 'Baloo 2';
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 130%;
+    margin-bottom: 0.5rem;
+  }
+
+  h3 {
+    color: ${(props) => props.theme['brown-200']};
+    font-size: 0.875rem;
+    font-weight: 400;
+    text-align: center;
+    line-height: 130%;
+    margin-right: 1.25rem;
+    margin-left: 1.25rem;
+    margin-bottom: 2.063rem;
+  }
+`
+export const PriceContainer = styled.div`
+  display: flex;
+  align-items: center;
+
+  span {
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 130%;
+  }
+
+  span > strong {
+    font-family: 'Baloo 2';
+    font-size: 1.5rem;
+    font-weight: 800;
+    line-height: 130%;
+    color: ${(props) => props.theme['brown-300']};
+  }
+
+  svg:nth-child(3) {
+    background-color: ${(props) => props.theme['purple-300']};
+    color: ${(props) => props.theme['white-300']};
+    padding: 8px;
+    width: 2.25rem;
+    height: 2.25rem;
+    border-radius: 6px;
+    margin-left: 0.5rem;
+  }
+`
+export const QuantityOfItems = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2rem;
+  width: 4.5rem;
+  background-color: ${(props) => props.theme['white-500']};
+  gap: 0.25rem;
+  padding: 0.5rem;
+  border-radius: 8px;
+  margin-left: 1.438rem;
+
+  button {
+    background-color: transparent;
+    border: none;
+    color: ${(props) => props.theme['purple-200']};
+  }
+`

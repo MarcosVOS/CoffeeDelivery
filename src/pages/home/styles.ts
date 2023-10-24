@@ -181,3 +181,14 @@ export const QuantityOfItems = styled.div`
     color: ${(props) => props.theme['purple-200']};
   }
 `
+
+export const TypesOfCoffeeAvailableItem = styled.div`
+  margin: 2rem 0; /* Espaçamento entre os itens abaixo e acima */
+`
+
+export const TypesOfCoffeeAvailableList = styled.div`
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-column-gap: 60px;
+  grid-row-gap: 40px;
+`

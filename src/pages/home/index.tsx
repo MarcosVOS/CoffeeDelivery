@@ -15,6 +15,7 @@ import {
   PriceContainer,
   QuantityOfItems,
   TypesOfCoffeeAvailable,
+  TypesOfCoffeeAvailableList,
 } from './styles'
 import cooffeDelivery from '../../assets/cooffeDelivery.png'
 import coffeImage from '../../assets/expresso.png'
@@ -51,28 +52,308 @@ export function Home() {
 
       <Catalog>
         <h1>Nossos cafés</h1>
-        <TypesOfCoffeeAvailable>
-          <img src={coffeImage} alt="Expresso" />
-          <p>Tradicional</p>
-          <h2>Expresso Tradicional</h2>
-          <h3>O tradicional café feito com água quente e grãos moídos</h3>
-          <PriceContainer>
-            <span>
-              R$<strong> 9,90</strong>
-            </span>
-            <QuantityOfItems>
-              <button>
-                <Minus size={14} />
-              </button>
+        <TypesOfCoffeeAvailableList>
+          <TypesOfCoffeeAvailable>
+            <img src={coffeImage} alt="Expresso" />
+            <p>Tradicional</p>
+            <h2>Expresso Tradicional</h2>
+            <h3>O tradicional café feito com água quente e grãos moídos</h3>
+            <PriceContainer>
+              <span>
+                R$<strong> 9,90</strong>
+              </span>
+              <QuantityOfItems>
+                <button>
+                  <Minus size={14} />
+                </button>
 
-              <span>1</span>
-              <button>
-                <Plus size={14} />
-              </button>
-            </QuantityOfItems>
-            <ShoppingCart size={22} weight="fill" />
-          </PriceContainer>
-        </TypesOfCoffeeAvailable>
+                <span>1</span>
+                <button>
+                  <Plus size={14} />
+                </button>
+              </QuantityOfItems>
+              <ShoppingCart size={22} weight="fill" />
+            </PriceContainer>
+          </TypesOfCoffeeAvailable>
+
+          <TypesOfCoffeeAvailable>
+            <img src={coffeImage} alt="Expresso" />
+            <p>Tradicional</p>
+            <h2>Expresso Tradicional</h2>
+            <h3>O tradicional café feito com água quente e grãos moídos</h3>
+            <PriceContainer>
+              <span>
+                R$<strong> 9,90</strong>
+              </span>
+              <QuantityOfItems>
+                <button>
+                  <Minus size={14} />
+                </button>
+
+                <span>1</span>
+                <button>
+                  <Plus size={14} />
+                </button>
+              </QuantityOfItems>
+              <ShoppingCart size={22} weight="fill" />
+            </PriceContainer>
+          </TypesOfCoffeeAvailable>
+
+          <TypesOfCoffeeAvailable>
+            <img src={coffeImage} alt="Expresso" />
+            <p>Tradicional</p>
+            <h2>Expresso Tradicional</h2>
+            <h3>O tradicional café feito com água quente e grãos moídos</h3>
+            <PriceContainer>
+              <span>
+                R$<strong> 9,90</strong>
+              </span>
+              <QuantityOfItems>
+                <button>
+                  <Minus size={14} />
+                </button>
+
+                <span>1</span>
+                <button>
+                  <Plus size={14} />
+                </button>
+              </QuantityOfItems>
+              <ShoppingCart size={22} weight="fill" />
+            </PriceContainer>
+          </TypesOfCoffeeAvailable>
+
+          <TypesOfCoffeeAvailable>
+            <img src={coffeImage} alt="Expresso" />
+            <p>Tradicional</p>
+            <h2>Expresso Tradicional</h2>
+            <h3>O tradicional café feito com água quente e grãos moídos</h3>
+            <PriceContainer>
+              <span>
+                R$<strong> 9,90</strong>
+              </span>
+              <QuantityOfItems>
+                <button>
+                  <Minus size={14} />
+                </button>
+
+                <span>1</span>
+                <button>
+                  <Plus size={14} />
+                </button>
+              </QuantityOfItems>
+              <ShoppingCart size={22} weight="fill" />
+            </PriceContainer>
+          </TypesOfCoffeeAvailable>
+
+          <TypesOfCoffeeAvailable>
+            <img src={coffeImage} alt="Expresso" />
+            <p>Tradicional</p>
+            <h2>Expresso Tradicional</h2>
+            <h3>O tradicional café feito com água quente e grãos moídos</h3>
+            <PriceContainer>
+              <span>
+                R$<strong> 9,90</strong>
+              </span>
+              <QuantityOfItems>
+                <button>
+                  <Minus size={14} />
+                </button>
+
+                <span>1</span>
+                <button>
+                  <Plus size={14} />
+                </button>
+              </QuantityOfItems>
+              <ShoppingCart size={22} weight="fill" />
+            </PriceContainer>
+          </TypesOfCoffeeAvailable>
+
+          <TypesOfCoffeeAvailable>
+            <img src={coffeImage} alt="Expresso" />
+            <p>Tradicional</p>
+            <h2>Expresso Tradicional</h2>
+            <h3>O tradicional café feito com água quente e grãos moídos</h3>
+            <PriceContainer>
+              <span>
+                R$<strong> 9,90</strong>
+              </span>
+              <QuantityOfItems>
+                <button>
+                  <Minus size={14} />
+                </button>
+
+                <span>1</span>
+                <button>
+                  <Plus size={14} />
+                </button>
+              </QuantityOfItems>
+              <ShoppingCart size={22} weight="fill" />
+            </PriceContainer>
+          </TypesOfCoffeeAvailable>
+
+          <TypesOfCoffeeAvailable>
+            <img src={coffeImage} alt="Expresso" />
+            <p>Tradicional</p>
+            <h2>Expresso Tradicional</h2>
+            <h3>O tradicional café feito com água quente e grãos moídos</h3>
+            <PriceContainer>
+              <span>
+                R$<strong> 9,90</strong>
+              </span>
+              <QuantityOfItems>
+                <button>
+                  <Minus size={14} />
+                </button>
+
+                <span>1</span>
+                <button>
+                  <Plus size={14} />
+                </button>
+              </QuantityOfItems>
+              <ShoppingCart size={22} weight="fill" />
+            </PriceContainer>
+          </TypesOfCoffeeAvailable>
+
+          <TypesOfCoffeeAvailable>
+            <img src={coffeImage} alt="Expresso" />
+            <p>Tradicional</p>
+            <h2>Expresso Tradicional</h2>
+            <h3>O tradicional café feito com água quente e grãos moídos</h3>
+            <PriceContainer>
+              <span>
+                R$<strong> 9,90</strong>
+              </span>
+              <QuantityOfItems>
+                <button>
+                  <Minus size={14} />
+                </button>
+
+                <span>1</span>
+                <button>
+                  <Plus size={14} />
+                </button>
+              </QuantityOfItems>
+              <ShoppingCart size={22} weight="fill" />
+            </PriceContainer>
+          </TypesOfCoffeeAvailable>
+
+          <TypesOfCoffeeAvailable>
+            <img src={coffeImage} alt="Expresso" />
+            <p>Tradicional</p>
+            <h2>Expresso Tradicional</h2>
+            <h3>O tradicional café feito com água quente e grãos moídos</h3>
+            <PriceContainer>
+              <span>
+                R$<strong> 9,90</strong>
+              </span>
+              <QuantityOfItems>
+                <button>
+                  <Minus size={14} />
+                </button>
+
+                <span>1</span>
+                <button>
+                  <Plus size={14} />
+                </button>
+              </QuantityOfItems>
+              <ShoppingCart size={22} weight="fill" />
+            </PriceContainer>
+          </TypesOfCoffeeAvailable>
+
+          <TypesOfCoffeeAvailable>
+            <img src={coffeImage} alt="Expresso" />
+            <p>Tradicional</p>
+            <h2>Expresso Tradicional</h2>
+            <h3>O tradicional café feito com água quente e grãos moídos</h3>
+            <PriceContainer>
+              <span>
+                R$<strong> 9,90</strong>
+              </span>
+              <QuantityOfItems>
+                <button>
+                  <Minus size={14} />
+                </button>
+
+                <span>1</span>
+                <button>
+                  <Plus size={14} />
+                </button>
+              </QuantityOfItems>
+              <ShoppingCart size={22} weight="fill" />
+            </PriceContainer>
+          </TypesOfCoffeeAvailable>
+
+          <TypesOfCoffeeAvailable>
+            <img src={coffeImage} alt="Expresso" />
+            <p>Tradicional</p>
+            <h2>Expresso Tradicional</h2>
+            <h3>O tradicional café feito com água quente e grãos moídos</h3>
+            <PriceContainer>
+              <span>
+                R$<strong> 9,90</strong>
+              </span>
+              <QuantityOfItems>
+                <button>
+                  <Minus size={14} />
+                </button>
+
+                <span>1</span>
+                <button>
+                  <Plus size={14} />
+                </button>
+              </QuantityOfItems>
+              <ShoppingCart size={22} weight="fill" />
+            </PriceContainer>
+          </TypesOfCoffeeAvailable>
+
+          <TypesOfCoffeeAvailable>
+            <img src={coffeImage} alt="Expresso" />
+            <p>Tradicional</p>
+            <h2>Expresso Tradicional</h2>
+            <h3>O tradicional café feito com água quente e grãos moídos</h3>
+            <PriceContainer>
+              <span>
+                R$<strong> 9,90</strong>
+              </span>
+              <QuantityOfItems>
+                <button>
+                  <Minus size={14} />
+                </button>
+
+                <span>1</span>
+                <button>
+                  <Plus size={14} />
+                </button>
+              </QuantityOfItems>
+              <ShoppingCart size={22} weight="fill" />
+            </PriceContainer>
+          </TypesOfCoffeeAvailable>
+
+          <TypesOfCoffeeAvailable>
+            <img src={coffeImage} alt="Expresso" />
+            <p>Tradicional</p>
+            <h2>Expresso Tradicional</h2>
+            <h3>O tradicional café feito com água quente e grãos moídos</h3>
+            <PriceContainer>
+              <span>
+                R$<strong> 9,90</strong>
+              </span>
+              <QuantityOfItems>
+                <button>
+                  <Minus size={14} />
+                </button>
+
+                <span>1</span>
+                <button>
+                  <Plus size={14} />
+                </button>
+              </QuantityOfItems>
+              <ShoppingCart size={22} weight="fill" />
+            </PriceContainer>
+          </TypesOfCoffeeAvailable>
+
+          {/* itens */}
+        </TypesOfCoffeeAvailableList>
       </Catalog>
     </>
   )

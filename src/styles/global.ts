@@ -20,4 +20,9 @@ export const GlobalStyle = createGlobalStyle`
         font-family: 'Roboto', sans-serif;
         font-size: 1rem;
     }
+
+    button{
+        background-color: transparent;
+        border: none;
+    }
 `

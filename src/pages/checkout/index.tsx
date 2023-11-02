@@ -2,9 +2,16 @@ import {
   ButtonConfirmation,
   CheckoutContainer,
   DeliveryAddress,
+  DeliveryAddressContainer,
+  DeliveryAddressLabel,
+  DeliveryAddressLabelInput,
+  DeliveryAddressLabelInputContainer,
   OrderInformation,
   PaymentConfirmation,
   PaymentMethod,
+  PaymentMethodLabel,
+  PaymentOption,
+  PaymentmMethodButtons,
   ProductsButton,
   ProductsButtonContainer,
   SelectedCoffee,
@@ -13,15 +20,66 @@ import {
 } from './styles'
 
 import coffeImage from '../../assets/expresso.png'
-import { Minus, Plus, Trash } from 'phosphor-react'
+import {
+  Bank,
+  CreditCard,
+  CurrencyDollar,
+  MapPin,
+  Minus,
+  Money,
+  Plus,
+  Trash,
+} from 'phosphor-react'
 
 export function Checkout() {
   return (
     <CheckoutContainer>
       <PaymentConfirmation>
         <h1>Complete seu pedido</h1>
-        <DeliveryAddress></DeliveryAddress>
-        <PaymentMethod></PaymentMethod>
+
+        <DeliveryAddress>
+          <DeliveryAddressContainer>
+            <DeliveryAddressLabel>
+              <MapPin />
+              <p>
+                Endereço de Entrega
+                <span>Informe o endereço onde deseja receber seu pedido</span>
+              </p>
+            </DeliveryAddressLabel>
+            <DeliveryAddressLabelInputContainer>
+              <DeliveryAddressLabelInput placeholder="CEP" />
+              <DeliveryAddressLabelInput placeholder="Rua" />
+              <DeliveryAddressLabelInput placeholder="Número" />
+              <DeliveryAddressLabelInput placeholder="Complemento Opcional" />
+              <DeliveryAddressLabelInput placeholder="Bairro" />
+              <DeliveryAddressLabelInput placeholder="Cidade" />
+              <DeliveryAddressLabelInput placeholder="UF" />
+            </DeliveryAddressLabelInputContainer>
+          </DeliveryAddressContainer>
+        </DeliveryAddress>
+
+        <PaymentMethod>
+          <PaymentMethodLabel>
+            <CurrencyDollar size={22} />
+            <p>
+              Pagamento
+              <span>
+                O pagamento é feito na entrega. Escolha a forma que deseja pagar
+              </span>
+            </p>
+          </PaymentMethodLabel>
+          <PaymentmMethodButtons>
+            <PaymentOption>
+              <CreditCard /> Cartão de crédito
+            </PaymentOption>
+            <PaymentOption>
+              <Bank /> cartão de débito
+            </PaymentOption>
+            <PaymentOption>
+              <Money /> dinheiro
+            </PaymentOption>
+          </PaymentmMethodButtons>
+        </PaymentMethod>
       </PaymentConfirmation>
 
       <SelectedItems>

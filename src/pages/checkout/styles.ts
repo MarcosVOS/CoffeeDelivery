@@ -30,9 +30,66 @@ export const DeliveryAddress = styled.div`
 export const PaymentMethod = styled.div`
   height: 12.938rem;
   background-color: ${(props) => props.theme['white-300']};
+  border-radius: 6px;
+  padding: 2.5rem;
+`
+export const PaymentMethodLabel = styled.div`
+  display: flex;
+  margin-bottom: 2rem;
+
+  svg {
+    color: ${(props) => props.theme['purple-200']};
+    margin-right: 0.5rem;
+  }
+
+  p {
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 130%;
+
+    span {
+      color: ${(props) => props.theme['brown-300']};
+      font-size: 0.875rem;
+      line-height: 130%;
+    }
+  }
+`
+
+export const PaymentmMethodButtons = styled.div`
+  display: flex;
+  justify-content: center;
+  gap: 0.75rem;
+`
+
+export const PaymentOption = styled.button`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.75rem;
+
+  height: 3.188rem;
+  width: 11.167rem;
+
+  font-size: 0.75rem;
+  font-weight: 400;
+  line-height: 160%;
+  color: ${(props) => props.theme['brown-300']};
+  text-transform: uppercase;
+
+  background-color: ${(props) => props.theme['white-500']};
+  border-radius: 6px;
+
+  svg {
+    width: 22px;
+    height: 22px;
+    color: ${(props) => props.theme['purple-200']};
+  }
 `
 
 export const SelectedItems = styled.div`
+  margin-left: auto;
   h1 {
     color: ${(props) => props.theme['brown-400']};
     font-family: 'Baloo 2';
@@ -153,4 +210,79 @@ export const ButtonConfirmation = styled.div`
 
   color: ${(props) => props.theme.white};
   background-color: ${(props) => props.theme['yellow-200']};
+`
+
+export const DeliveryAddressContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2.5rem;
+`
+
+export const DeliveryAddressLabel = styled.div`
+  display: flex;
+  gap: 0.5rem;
+
+  svg {
+    width: 22px;
+    height: 22px;
+    color: ${(props) => props.theme['yellow-300']};
+  }
+
+  p {
+    display: flex;
+    flex-direction: column;
+
+    span {
+      color: ${(props) => props.theme['brown-300']};
+      font-size: 0.875rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 130%;
+    }
+  }
+`
+
+export const DeliveryAddressLabelInputContainer = styled.div`
+  display: flex;
+  /* flex-direction: column; */
+  align-items: flex-start;
+  gap: 1rem;
+  align-self: stretch;
+  flex-wrap: wrap;
+`
+
+export const DeliveryAddressLabelInput = styled.input`
+  background-color: ${(props) => props.theme['white-400']};
+  border-radius: 4px;
+  border: 1px solid ${(props) => props.theme['white-500']};
+
+  padding: 0.75rem;
+
+  &:nth-child(1) {
+    width: 12.5rem;
+  }
+
+  &:nth-child(2) {
+    width: 35rem;
+  }
+  &:nth-child(3) {
+    width: 12.5rem;
+  }
+
+  &:nth-child(4) {
+    width: 21.5rem;
+  }
+
+  &:nth-child(5) {
+    width: 12.5rem;
+  }
+
+  &:nth-child(6) {
+    width: 17.25rem;
+  }
+
+  &:nth-child(7) {
+    width: 3.2rem;
+  }
 `

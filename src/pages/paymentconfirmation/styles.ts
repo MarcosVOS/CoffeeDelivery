@@ -39,8 +39,14 @@ export const ConfirmationMessageAbout = styled.div`
   padding: 2.5rem;
   gap: 2rem;
 
-  border-radius: 6px 36px;
-  border: 1px solid ${(props) => props.theme['yellow-200']};
+  border: 1px solid;
+  border-radius: 15px 50px;
+  border-image: linear-gradient(
+      45deg,
+      ${(props) => props.theme['yellow-200']},
+      ${(props) => props.theme['purple-200']}
+    )
+    1;
 `
 
 const ICON_COLORS = {

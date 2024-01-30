@@ -19,7 +19,7 @@ import {
   TotalOrder,
 } from './styles'
 
-import coffeImage from '../../assets/expresso.png'
+import coffeTypeExpresso from '../../assets/coffeetypes/Type=Expresso Cremoso.png'
 import {
   Bank,
   CreditCard,
@@ -86,7 +86,7 @@ export function Checkout() {
         <h1>Cafés selecionados</h1>
         <OrderInformation>
           <SelectedCoffee>
-            <img src={coffeImage} alt="" />
+            <img src={coffeTypeExpresso} alt="" />
             <div>
               <p>Expresso Tradicional</p>
 

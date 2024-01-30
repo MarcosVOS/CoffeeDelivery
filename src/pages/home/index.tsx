@@ -18,7 +18,21 @@ import {
   TypesOfCoffeeAvailableList,
 } from './styles'
 import cooffeDelivery from '../../assets/cooffeDelivery.png'
-import coffeImage from '../../assets/expresso.png'
+
+import coffeTypeExpresso from '../../assets/coffeetypes/Type=Expresso.png'
+import coffeTypeAmericano from '../../assets/coffeetypes/Type=Americano.png'
+import coffeTypeCremoso from '../../assets/coffeetypes/Type=Expresso Cremoso.png'
+import coffeTypeGelado from '../../assets/coffeetypes/Type=Café Gelado.png'
+import coffeTypeWithMilk from '../../assets/coffeetypes/Type=Café com Leite.png'
+import coffeTypeLatte from '../../assets/coffeetypes/Type=Latte.png'
+import coffeTypeCapuccino from '../../assets/coffeetypes/Type=Capuccino.png'
+import coffeTypeMacchiato from '../../assets/coffeetypes/Type=Macchiato.png'
+import coffeTypeMocaccino from '../../assets/coffeetypes/Type=Mochaccino.png'
+import coffeTypeChocolateQuente from '../../assets/coffeetypes/Type=Chocolate Quente.png'
+import coffeTypeCubano from '../../assets/coffeetypes/Type=Cubano.png'
+import coffeTypeHavaiano from '../../assets/coffeetypes/Type=Havaiano.png'
+import coffeTypeArabe from '../../assets/coffeetypes/Type=Árabe.png'
+import coffeTypeIrlandês from '../../assets/coffeetypes/Type=Irlandês.png'
 
 export function Home() {
   return (
@@ -54,7 +68,7 @@ export function Home() {
         <h1>Nossos cafés</h1>
         <TypesOfCoffeeAvailableList>
           <TypesOfCoffeeAvailable>
-            <img src={coffeImage} alt="Expresso" />
+            <img src={coffeTypeExpresso} alt="Expresso" />
             <p>Tradicional</p>
             <h2>Expresso Tradicional</h2>
             <h3>O tradicional café feito com água quente e grãos moídos</h3>
@@ -77,7 +91,7 @@ export function Home() {
           </TypesOfCoffeeAvailable>
 
           <TypesOfCoffeeAvailable>
-            <img src={coffeImage} alt="Expresso" />
+            <img src={coffeTypeExpresso} alt="Expresso" />
             <p>Tradicional</p>
             <h2>Expresso Tradicional</h2>
             <h3>O tradicional café feito com água quente e grãos moídos</h3>
@@ -100,7 +114,7 @@ export function Home() {
           </TypesOfCoffeeAvailable>
 
           <TypesOfCoffeeAvailable>
-            <img src={coffeImage} alt="Expresso" />
+            <img src={coffeTypeExpresso} alt="Expresso" />
             <p>Tradicional</p>
             <h2>Expresso Tradicional</h2>
             <h3>O tradicional café feito com água quente e grãos moídos</h3>
@@ -123,7 +137,7 @@ export function Home() {
           </TypesOfCoffeeAvailable>
 
           <TypesOfCoffeeAvailable>
-            <img src={coffeImage} alt="Expresso" />
+            <img src={coffeTypeExpresso} alt="Expresso" />
             <p>Tradicional</p>
             <h2>Expresso Tradicional</h2>
             <h3>O tradicional café feito com água quente e grãos moídos</h3>
@@ -146,7 +160,7 @@ export function Home() {
           </TypesOfCoffeeAvailable>
 
           <TypesOfCoffeeAvailable>
-            <img src={coffeImage} alt="Expresso" />
+            <img src={coffeTypeExpresso} alt="Expresso" />
             <p>Tradicional</p>
             <h2>Expresso Tradicional</h2>
             <h3>O tradicional café feito com água quente e grãos moídos</h3>
@@ -169,7 +183,7 @@ export function Home() {
           </TypesOfCoffeeAvailable>
 
           <TypesOfCoffeeAvailable>
-            <img src={coffeImage} alt="Expresso" />
+            <img src={coffeTypeExpresso} alt="Expresso" />
             <p>Tradicional</p>
             <h2>Expresso Tradicional</h2>
             <h3>O tradicional café feito com água quente e grãos moídos</h3>
@@ -192,7 +206,7 @@ export function Home() {
           </TypesOfCoffeeAvailable>
 
           <TypesOfCoffeeAvailable>
-            <img src={coffeImage} alt="Expresso" />
+            <img src={coffeTypeExpresso} alt="Expresso" />
             <p>Tradicional</p>
             <h2>Expresso Tradicional</h2>
             <h3>O tradicional café feito com água quente e grãos moídos</h3>
@@ -215,7 +229,7 @@ export function Home() {
           </TypesOfCoffeeAvailable>
 
           <TypesOfCoffeeAvailable>
-            <img src={coffeImage} alt="Expresso" />
+            <img src={coffeTypeExpresso} alt="Expresso" />
             <p>Tradicional</p>
             <h2>Expresso Tradicional</h2>
             <h3>O tradicional café feito com água quente e grãos moídos</h3>
@@ -238,7 +252,7 @@ export function Home() {
           </TypesOfCoffeeAvailable>
 
           <TypesOfCoffeeAvailable>
-            <img src={coffeImage} alt="Expresso" />
+            <img src={coffeTypeExpresso} alt="Expresso" />
             <p>Tradicional</p>
             <h2>Expresso Tradicional</h2>
             <h3>O tradicional café feito com água quente e grãos moídos</h3>
@@ -261,7 +275,7 @@ export function Home() {
           </TypesOfCoffeeAvailable>
 
           <TypesOfCoffeeAvailable>
-            <img src={coffeImage} alt="Expresso" />
+            <img src={coffeTypeExpresso} alt="Expresso" />
             <p>Tradicional</p>
             <h2>Expresso Tradicional</h2>
             <h3>O tradicional café feito com água quente e grãos moídos</h3>
@@ -284,7 +298,7 @@ export function Home() {
           </TypesOfCoffeeAvailable>
 
           <TypesOfCoffeeAvailable>
-            <img src={coffeImage} alt="Expresso" />
+            <img src={coffeTypeExpresso} alt="Expresso" />
             <p>Tradicional</p>
             <h2>Expresso Tradicional</h2>
             <h3>O tradicional café feito com água quente e grãos moídos</h3>
@@ -307,7 +321,7 @@ export function Home() {
           </TypesOfCoffeeAvailable>
 
           <TypesOfCoffeeAvailable>
-            <img src={coffeImage} alt="Expresso" />
+            <img src={coffeTypeExpresso} alt="Expresso" />
             <p>Tradicional</p>
             <h2>Expresso Tradicional</h2>
             <h3>O tradicional café feito com água quente e grãos moídos</h3>
@@ -330,7 +344,7 @@ export function Home() {
           </TypesOfCoffeeAvailable>
 
           <TypesOfCoffeeAvailable>
-            <img src={coffeImage} alt="Expresso" />
+            <img src={coffeTypeExpresso} alt="Expresso" />
             <p>Tradicional</p>
             <h2>Expresso Tradicional</h2>
             <h3>O tradicional café feito com água quente e grãos moídos</h3>

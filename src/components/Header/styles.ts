@@ -38,6 +38,7 @@ export const ShoppingCartContainer = styled.button`
   justify-content: center;
   align-items: center;
   border-radius: 6px;
+  background-color: ${(props) => props.theme['yellow-100']};
 
   color: ${(props) => props.theme['yellow-300']};
   border: none;

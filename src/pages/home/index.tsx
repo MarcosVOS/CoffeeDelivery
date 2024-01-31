@@ -35,6 +35,7 @@ import coffeTypeArabe from '../../assets/coffeetypes/Type=Árabe.png'
 import coffeTypeIrlandês from '../../assets/coffeetypes/Type=Irlandês.png'
 
 import { useState } from 'react'
+import { NavLink } from 'react-router-dom'
 
 interface coffeeTypes {
   Id: string
@@ -43,6 +44,7 @@ interface coffeeTypes {
   Description: string
   Price: string
   Label: string[]
+  QuantityOfItems: number
 }
 
 export function Home() {
@@ -54,6 +56,7 @@ export function Home() {
       Description: 'O tradicional café feito com água quente e grãos moídos',
       Price: '9,90',
       Label: ['Tradicional'],
+      QuantityOfItems: 0,
     },
     {
       Id: '2',
@@ -62,6 +65,7 @@ export function Home() {
       Description: 'Expresso diluído, menos intenso que o tradicional',
       Price: '9,90',
       Label: ['Tradicional'],
+      QuantityOfItems: 0,
     },
     {
       Id: '3',
@@ -70,6 +74,7 @@ export function Home() {
       Description: 'Café expresso tradicional com espuma cremosa',
       Price: '9,90',
       Label: ['Tradicional'],
+      QuantityOfItems: 0,
     },
     {
       Id: '4',
@@ -78,6 +83,7 @@ export function Home() {
       Description: 'Bebida preparada com café expresso e cubos de gelo',
       Price: '9,90',
       Label: ['Tradicional', 'Gelado'],
+      QuantityOfItems: 0,
     },
     {
       Id: '5',
@@ -86,6 +92,7 @@ export function Home() {
       Description: 'Meio a meio de expresso tradicional com leite vaporizado',
       Price: '9,90',
       Label: ['Tradicional', 'Com leite'],
+      QuantityOfItems: 0,
     },
     {
       Id: '6',
@@ -95,6 +102,7 @@ export function Home() {
         'Uma dose de café expresso com o dobro de leite e espuma cremosa',
       Price: '9,90',
       Label: ['Tradicional', 'Com leite'],
+      QuantityOfItems: 0,
     },
     {
       Id: '7',
@@ -104,6 +112,7 @@ export function Home() {
         'Bebida com canela feita de doses iguais de café, leite e espuma',
       Price: '9,90',
       Label: ['Tradicional', 'Com leite'],
+      QuantityOfItems: 0,
     },
     {
       Id: '8',
@@ -113,6 +122,7 @@ export function Home() {
         'Café expresso misturado com um pouco de leite quente e espuma',
       Price: '9,90',
       Label: ['Tradicional', 'Com leite'],
+      QuantityOfItems: 0,
     },
     {
       Id: '9',
@@ -121,6 +131,7 @@ export function Home() {
       Description: 'Café expresso com calda de chocolate, pouco leite e espuma',
       Price: '9,90',
       Label: ['Tradicional', 'Com leite'],
+      QuantityOfItems: 0,
     },
     {
       Id: '10',
@@ -130,6 +141,7 @@ export function Home() {
         'Bebida feita com chocolate dissolvido no leite quente e café',
       Price: '9,90',
       Label: ['Especial', 'Com leite'],
+      QuantityOfItems: 0,
     },
     {
       Id: '11',
@@ -139,6 +151,7 @@ export function Home() {
         'Drink gelado de café expresso com rum, creme de leite e hortelã',
       Price: '9,90',
       Label: ['Especial', 'Alcólico', 'Gelado'],
+      QuantityOfItems: 0,
     },
     {
       Id: '12',
@@ -147,6 +160,7 @@ export function Home() {
       Description: 'Bebida adocicada preparada com café e leite de coco',
       Price: '9,90',
       Label: ['Especial'],
+      QuantityOfItems: 0,
     },
     {
       Id: '13',
@@ -155,6 +169,7 @@ export function Home() {
       Description: 'Bebida preparada com grãos de café árabe e especiarias',
       Price: '9,90',
       Label: ['Tradicional', 'Com leite'],
+      QuantityOfItems: 0,
     },
     {
       Id: '14',
@@ -163,6 +178,7 @@ export function Home() {
       Description: 'Bebida a base de café, uisque irlandês, açúcar e chantily',
       Price: '9,90',
       Label: ['Tradicional', 'Alcoólico'],
+      QuantityOfItems: 0,
     },
   ])
 
@@ -219,12 +235,14 @@ export function Home() {
                       <Minus size={14} />
                     </button>
 
-                    <span>1</span>
+                    <span>{coffee.QuantityOfItems}</span>
                     <button>
                       <Plus size={14} />
                     </button>
                   </QuantityOfItems>
-                  <ShoppingCart size={22} weight="fill" />
+                  <NavLink to="/checkout" title="Carrinho">
+                    <ShoppingCart size={22} weight="fill" />
+                  </NavLink>
                 </PriceContainer>
               </TypesOfCoffeeAvailable>
             )

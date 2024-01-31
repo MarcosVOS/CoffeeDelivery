@@ -158,7 +158,7 @@ export const PriceContainer = styled.div`
     color: ${(props) => props.theme['brown-300']};
   }
 
-  svg:nth-child(3) {
+  a:nth-child(3) {
     background-color: ${(props) => props.theme['purple-300']};
     color: ${(props) => props.theme['white-300']};
     padding: 8px;
@@ -184,6 +184,7 @@ export const QuantityOfItems = styled.div`
     background-color: transparent;
     border: none;
     color: ${(props) => props.theme['purple-200']};
+    cursor: pointer;
   }
 `
 

@@ -176,11 +176,33 @@ export function Home() {
       Name: 'Irlandês',
       ImageSource: coffeTypeIrlandês,
       Description: 'Bebida a base de café, uisque irlandês, açúcar e chantily',
-      Price: '9,90',
+      Price: 9.9,
       Label: ['Tradicional', 'Alcoólico'],
       QuantityOfItems: 0,
     },
   ])
+
+  function handleIncreaseTheAmount(Id: string) {
+    setTypesOfCoffee(() => {
+      return typesOfCoffee.map((coffee) => {
+        if (coffee.Id === Id) {
+          return { ...coffee, QuantityOfItems: coffee.QuantityOfItems + 1 }
+        }
+        return { ...coffee }
+      })
+    })
+  }
+
+  function handleDecreaseTheAmount(Id: string) {
+    setTypesOfCoffee(() => {
+      return typesOfCoffee.map((coffee) => {
+        if (coffee.Id === Id && coffee.QuantityOfItems > 0) {
+          return { ...coffee, QuantityOfItems: coffee.QuantityOfItems - 1 }
+        }
+        return { ...coffee }
+      })
+    })
+  }
 
   return (
     <>
@@ -231,12 +253,20 @@ export function Home() {
                     R$<strong> {coffee.Price}</strong>
                   </span>
                   <QuantityOfItems>
-                    <button>
+                    <button
+                      onClick={() => {
+                        handleDecreaseTheAmount(coffee.Id)
+                      }}
+                    >
                       <Minus size={14} />
                     </button>
 
                     <span>{coffee.QuantityOfItems}</span>
-                    <button>
+                    <button
+                      onClick={() => {
+                        handleIncreaseTheAmount(coffee.Id)
+                      }}
+                    >
                       <Plus size={14} />
                     </button>
                   </QuantityOfItems>

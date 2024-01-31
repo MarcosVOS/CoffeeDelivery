@@ -134,6 +134,11 @@ export const TypesOfCoffeeAvailable = styled.div`
     margin-left: 1.25rem;
     margin-bottom: 2.063rem;
   }
+
+  div {
+    display: flex;
+    gap: 4px;
+  }
 `
 export const PriceContainer = styled.div`
   display: flex;
